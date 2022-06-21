@@ -23,7 +23,7 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {/* conditional message  */}
+        {/* To add a conditional message  */}
         {filteredExpenses.length === 0 && <p> No Expenses Listed </p>}
         {filteredExpenses.length > 0 &&
           // Making a new array
