@@ -26,7 +26,6 @@ const Expenses = (props) => {
         {/* To add a conditional message  */}
         {filteredExpenses.length === 0 && <p> No Expenses Listed !!! </p>}
         {filteredExpenses.length > 0 &&
-          // Making a new array
           filteredExpenses.map((expense) => (
             <ExpenseItem
               key={expense.id}
